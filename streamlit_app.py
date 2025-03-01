@@ -11,7 +11,7 @@ years_experience = st.number_input("Enter your years of experience:", min_value=
 # Generate Career Path
 if st.button("Generate Career Path"):
     if name and years_experience >= 0:
-        client = genai.Client(api_key="your-api-key")
+        client = genai.Client(api_key="AIzaSyA4stbq0jpRp7_GjreizU-JN58EullB0oU")
         prompt = (f"As an expert career guide counselor, make a detailed career path for me. My name is {name}, "
                   f"I am interested in MERN stack development, and I have {years_experience} years of experience.")
         response = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
